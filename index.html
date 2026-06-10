@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spandan IT Peripherals | IoT, Networking & Safety Operations Center</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #030712;
+            color: #f8fafc;
+        }
+        .glow-blue {
+            box-shadow: 0 0 25px -5px rgba(59, 130, 246, 0.15);
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased min-h-screen flex flex-col justify-between">
+
+    <nav class="border-b border-slate-800 bg-slate-900/80 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3 cursor-pointer" onclick="switchTab('home')">
+                <div class="bg-gradient-to-br from-amber-500 to-orange-600 p-2.5 rounded-lg shadow-md flex items-center justify-center">
+                    <i class="fa-solid fa-chart-line text-slate-950 text-xl"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-black tracking-tight text-white block">SPANDAN</span>
+                    <span class="text-xs text-amber-500 tracking-widest font-mono uppercase block -mt-1">IT Peripherals</span>
+                </div>
+            </div>
+            
+            <div class="hidden md:flex space-x-1.5 font-mono text-xs">
+                <button id="btn-home" onclick="switchTab('home')" class="nav-btn px-4 py-2 rounded-md uppercase font-bold tracking-wider transition-all duration-200 bg-amber-500 text-slate-950 shadow-lg shadow-amber-500/10">Home</button>
+                <button id="btn-services" onclick="switchTab('services')" class="nav-btn px-4 py-2 rounded-md uppercase font-bold tracking-wider text-slate-400 hover:text-white hover:bg-slate-800">Services</button>
+                <button id="btn-projects" onclick="switchTab('projects')" class="nav-btn px-4 py-2 rounded-md uppercase font-bold tracking-wider text-slate-400 hover:text-white hover:bg-slate-800">Projects</button>
+                <button id="btn-careers" onclick="switchTab('careers')" class="nav-btn px-4 py-2 rounded-md uppercase font-bold tracking-wider text-slate-400 hover:text-white hover:bg-slate-800">Careers</button>
+                <button id="btn-inquiry" onclick="switchTab('inquiry')" class="nav-btn px-4 py-2 rounded-md uppercase font-bold tracking-wider text-slate-400 hover:text-white hover:bg-slate-800">Inquiry</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+        <div id="view-home" class="tab-content active space-y-16">
+            <div class="bg-gradient-to-br from-slate-900 via-slate-900 to-slate-950 border border-slate-800 rounded-2xl p-8 md:p-12 relative overflow-hidden glow-blue">
+                <div class="relative z-10 max-w-3xl">
+                    <div class="inline-flex items-center space-x-2 bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-mono px-3 py-1 rounded-md mb-6 uppercase tracking-widest">
+                        <i class="fa-solid fa-circle-nodes animate-pulse text-[10px] mr-1"></i>
+                        <span>Ops Control Status: Operational</span>
+                    </div>
+                    <h1 class="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight leading-tight mb-6">
+                        Industrial-Grade Deployment. <br/>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-500">
+                            Zero Downtime Execution.
+                        </span>
+                    </h1>
+                    <p class="text-sm sm:text-base text-slate-400 mb-8 font-sans leading-relaxed max-w-2xl">
+                        Spandan IT Peripherals engineered solutions bridge infrastructure complexity with robust stability. We scale secure topologies across IT Networking, CCTV Surveillance matrices, and strict Fire Safety Standards compliance.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <button onclick="switchTab('inquiry')" class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-mono font-bold text-xs uppercase tracking-wider px-6 py-3.5 rounded-lg shadow-md transition-all">
+                            Initialize Site Inquiry
+                        </button>
+                        <button onclick="switchTab('services')" class="bg-slate-800 hover:bg-slate-700 text-white font-mono font-bold text-xs uppercase tracking-wider px-6 py-3.5 rounded-lg border border-slate-700 transition-all">
+                            View Systems Catalog
+                        </button>
+                    </div>
+                </div>
+                <div class="absolute right-0 bottom-0 top-0 w-1/3 opacity-5 hidden lg:block bg-[radial-gradient(#3b82f6_1.5px,transparent_1.5px)] [background-size:24px_24px]"></div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-slate-900 border border-slate-800/80 p-6 rounded-xl flex items-start justify-between">
+                    <div>
+                        <span class="block text-[10px] font-mono tracking-widest text-slate-500 uppercase">ESTABLISHED YEAR</span>
+                        <span class="block text-xl font-bold text-white mt-1 mb-0.5">2018</span>
+                        <span class="block text-xs font-sans text-slate-400">Filing Registry Verified</span>
+                    </div>
+                    <div class="bg-slate-800 p-2.5 rounded-lg border border-slate-700"><i class="fa-solid fa-calendar text-amber-400"></i></div>
+                </div>
+                <div class="bg-slate-900 border border-slate-800/80 p-6 rounded-xl flex items-start justify-between">
+                    <div>
+                        <span class="block text-[10px] font-mono tracking-widest text-slate-500 uppercase">MSME IDENTIFIER</span>
+                        <span class="block text-xl font-bold text-white mt-1 mb-0.5">UDYAM Registered</span>
+                        <span class="block text-xs font-sans text-slate-400">GJ-10-0069615</span>
+                    </div>
+                    <div class="bg-slate-800 p-2.5 rounded-lg border border-slate-700"><i class="fa-solid fa-cpu text-cyan-400"></i></div>
+                </div>
+                <div class="bg-slate-900 border border-slate-800/80 p-6 rounded-xl flex items-start justify-between">
+                    <div>
+                        <span class="block text-[10px] font-mono tracking-widest text-slate-500 uppercase">TAX ENFORCEMENT</span>
+                        <span class="block text-xl font-bold text-white mt-1 mb-0.5">GSTIN Compliant</span>
+                        <span class="block text-xs font-sans text-slate-400">24DPJPM5684FIZK</span>
+                    </div>
+                    <div class="bg-slate-800 p-2.5 rounded-lg border border-slate-700"><i class="fa-solid fa-layer-group text-blue-400"></i></div>
+                </div>
+                <div class="bg-slate-900 border border-slate-800/80 p-6 rounded-xl flex items-start justify-between">
+                    <div>
+                        <span class="block text-[10px] font-mono tracking-widest text-slate-500 uppercase">OPERATION AUDITS</span>
+                        <span class="block text-xl font-bold text-white mt-1 mb-0.5">100% Certified</span>
+                        <span class="block text-xs font-sans text-slate-400">Safety Compliance Rules</span>
+                    </div>
+                    <div class="bg-slate-800 p-2.5 rounded-lg border border-slate-700"><i class="fa-solid fa-shield-halved text-orange-400"></i></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="view-services" class="tab-content space-y-10">
+            <div class="border-l-4 border-amber-500 pl-4">
+              <h2 class="text-xs font-mono uppercase tracking-widest text-amber-500">Core Matrix</h2>
+              <p class="text-2xl font-black text-white uppercase tracking-tight">Systems Engineering & Managed Services</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-slate-900 border border-slate-800 p-6 rounded-xl group hover:border-slate-700 transition-colors">
+                    <div class="flex items-center space-x-3.5 mb-5">
+                        <div class="bg-slate-800 p-2.5 rounded-lg border border-slate-700 text-blue-400"><i class="fa-solid fa-network-wired text-xl"></i></div>
+                        <h3 class="text-md font-bold text-white tracking-tight">IT Networking Solutions</h3>
+                    </div>
+                    <ul class="space-y-2.5 text-xs text-slate-400 font-sans">
+                        <li class="flex items-start"><i class="fa-solid fa-circle-check text-slate-600 mr-2 mt-0.5"></i>Structured LAN Cabling Frameworks</li>
+                        <li class="flex items-start"><i class="fa-solid fa-circle-check text-slate-600 mr-2 mt-0.5"></i>Core Switch & Router Engineering</li>
+                        <li class="flex items-start"><i class="fa-solid fa-circle-check text-slate-600 mr-2 mt-0.5"></i>Enterprise Access Points & Security Wireless</li>
+                        <li class="flex items-start"><i class="fa-solid fa-circle-check text-slate-600 mr-2 mt-0.5"></i>Server Rack Cleanups & Patch Planning</li>
+                    </ul>
+                </div>
+                <div class="bg-slate-900 border border-slate-800 p-6 rounded-xl group hover:border-slate-700 transition-colors">
+                    <div class="flex items-center space-x-3.5 mb-5">
+                        <div class="bg-slate-800 p-2.5 rounded-lg border border-slate-700 text-emerald-400"><i class="fa-solid fa-video text-xl"></i></div>
+                        <h3 class="text-md font-bold text-white tracking-tight">CCTV Surveillance Systems</h3>
+                    </div>
+                    <ul class="space-y-2.5 text-xs text-slate-400 font-sans">
+                        <li class="flex items-start"><i class="fa-solid fa-circle-check text-slate-600 mr-2 mt-0.5"></i>IP & Analog High-Definition Cameras</li>
+                        <li class="flex items-start"><i class="fa-solid fa-circle-check text-slate-600 mr-2 mt-0.5"></i>Industrial Outdoor Perimeter Surveillance</li>
+                        <li class="flex items-start"><i class="fa-solid fa-circle-check text-slate-600 mr-2 mt-0.5"></i>Storage Arrays (DVR/NVR Multi-TB Layouts)</li>
+                        <li class="flex items-start"><i class="fa-solid fa-circle-check text-slate-600 mr-2 mt-0.5"></i>Remote Streaming & Mobile Access Enforcements</li>
+                    </ul>
+                </div>
+                <div class="bg-slate-900 border border-slate-800 p-6 rounded-xl group hover:border-slate-700 transition-colors">
+                    <div class="flex items-center space-x-3.5 mb-5">
+                        <div class="bg-slate-800 p-2.5 rounded-lg border border-slate-700 text-orange-500"><i class="fa-solid fa-fire text-xl"></i></div>
+                        <h3 class="text-md font-bold text-white tracking-tight">Fire Detection & Alarm Systems</h3>
+                    </div>
+                    <ul class="space-y-2.5 text-xs text-slate-400 font-sans">
+                        <li class="flex items-start"><i class="fa-solid fa-circle-check text-slate-600 mr-2 mt-0.5"></i>Intelligent Control Panel Commissions</li>
+                        <li class="flex items-start"><i class="fa-solid fa-circle-check text-slate-600 mr-2 mt-0.5"></i>Thermal, Smoke, and Flame Multi-Sensors</li>
+                        <li class="flex items-start"><i class="fa-solid fa-circle-check text-slate-600 mr-2 mt-0.5"></i>Manual Call Points & Addressable Hooters</li>
+                        <li class="flex items-start"><i class="fa-solid fa-circle-check text-slate-600 mr-2 mt-0.5"></i>Regulatory Compliance Auditing Support</li>
+                    </ul>
+                </div>
+                <div class="bg-slate-900 border border-slate-800 p-6 rounded-xl group hover:border-slate-700 transition-colors">
+                    <div class="flex items-center space-x-3.5 mb-5">
+                        <div class="bg-slate-800 p-2.5 rounded-lg border border-slate-700 text-purple-400"><i class="fa-solid fa-users text-xl"></i></div>
+                        <h3 class="text-md font-bold text-white tracking-tight">Specialized Manpower Supply</h3>
+                    </div>
+                    <ul class="space-y-2.5 text-xs text-slate-400 font-sans">
+                        <li class="flex items-start"><i class="fa-solid fa-circle-check text-slate-600 mr-2 mt-0.5"></i>Certified On-Site Maintenance Crews</li>
+                        <li class="flex items-start"><i class="fa-solid fa-circle-check text-slate-600 mr-2 mt-0.5"></i>L1/L2 Technical Resident Network Engineers</li>
+                        <li class="flex items-start"><i class="fa-solid fa-circle-check text-slate-600 mr-2 mt-0.5"></i>Security Deployment Implementation Teams</li>
+                    </ul>
+                </div>
+                <div class="bg-slate-900 border border-slate-800 p-6 rounded-xl group hover:border-slate-700 transition-colors">
+                    <div class="flex items-center space-x-3.5 mb-5">
+                        <div class="bg-slate-800 p-2.5 rounded-lg border border-slate-700 text-cyan-400"><i class="fa-solid fa-microchip text-xl"></i></div>
+                        <h3 class="text-md font-bold text-white tracking-tight">Advanced IoT & Automation</h3>
+                    </div>
+                    <ul class="space-y-2.5 text-xs text-slate-400 font-sans">
+                        <li class="flex items-start"><i class="fa-solid fa-circle-check text-slate-600 mr-2 mt-0.5"></i>Periphery Telemetry Sensing Integrations</li>
+                        <li class="flex items-start"><i class="fa-solid fa-circle-check text-slate-600 mr-2 mt-0.5"></i>Smart Facility Security Aggregations</li>
+                        <li class="flex items-start"><i class="fa-solid fa-circle-check text-slate-600 mr-2 mt-0.5"></i>Hardware-to-Cloud Integration Pipelines</li>
+                    </ul>
+                </div>
+                <div class="bg-slate-900 border border-slate-800 p-6 rounded-xl group hover:border-slate-700 transition-colors">
+                    <div class="flex items-center space-x-3.5 mb-5">
+                        <div class="bg-slate-800 p-2.5 rounded-lg border border-slate-700 text-amber-400"><i class="fa-solid fa-screwdriver-wrench text-xl"></i></div>
+                        <h3 class="text-md font-bold text-white tracking-tight">Annual Maintenance Contracts</h3>
+                    </div>
+                    <ul class="space-y-2.5 text-xs text-slate-400 font-sans">
+                        <li class="flex items-start"><i class="fa-solid fa-circle-check text-slate-600 mr-2 mt-0.5"></i>Preventive Infrastructure Cleanups</li>
+                        <li class="flex items-start"><i class="fa-solid fa-circle-check text-slate-600 mr-2 mt-0.5"></i>Emergency Priority Site Breakdowns</li>
+                        <li class="flex items-start"><i class="fa-solid fa-circle-check text-slate-600 mr-2 mt-0.5"></i>Guaranteed SLA Turnaround Timelines</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="view-projects" class="tab-content space-y-10">
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between border-b border-slate-800 pb-6 gap-4">
+                <div>
+                    <h2 class="text-xs font-mono uppercase tracking-widest text-emerald-400">Deployment Telemetry</h2>
+                    <p class="text-2xl font-black text-white uppercase tracking-tight">Successful Site Formations</p>
+                </div>
+                <div class="flex flex-wrap gap-1 bg-slate-900 p-1 border border-slate-800 rounded-lg self-start">
+                    <button onclick="filterGallery('all')" class="filter-btn px-3 py-1.5 font-mono text-[10px] uppercase font-bold rounded-md tracking-wider transition-all bg-slate-800 text-white border border-slate-700">all</button>
+                    <button onclick="filterGallery('networking')" class="filter-btn px-3 py-1.5 font-mono text-[10px] uppercase font-bold rounded-md tracking-wider text-slate-400 hover:text-slate-200">networking</button>
+                    <button onclick="filterGallery('safety')" class="filter-btn px-3 py-1.5 font-mono text-[10px] uppercase font-bold rounded-md tracking-wider text-slate-400 hover:text-slate-200">safety</button>
+                    <button onclick="filterGallery('cctv')" class="filter-btn px-3 py-1.5 font-mono text-[10px] uppercase font-bold rounded-md tracking-wider text-slate-400 hover:text-slate-200">cctv</button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="project-card bg-slate-900 border border-slate-800 rounded-xl overflow-hidden flex flex-col justify-between" data-category="networking">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-[10px] font-mono bg-slate-800 border border-slate-700 px-2 py-0.5 rounded-sm uppercase tracking-wider text-slate-400">networking</span>
+                            <i class="fa-solid fa-network-wired text-blue-400"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Enterprise LAN Overhaul</h3>
+                        <p class="text-xs font-sans text-slate-400 leading-relaxed">Managed multi-tier switches mapping across 4 core floors.</p>
+                    </div>
+                    <div class="bg-slate-950 px-6 py-3 border-t border-slate-800/60 font-mono text-[11px] text-slate-500 flex justify-between items-center">
+                        <span>Live Verification:</span>
+                        <span class="text-emerald-400 font-bold">1.2 Gbps Constant Load Balance</span>
+                    </div>
+                </div>
+                <div class="project-card bg-slate-900 border border-slate-800 rounded-xl overflow-hidden flex flex-col justify-between" data-category="cctv">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-[10px] font-mono bg-slate-800 border border-slate-700 px-2 py-0.5 rounded-sm uppercase tracking-wider text-slate-400">cctv</span>
+                            <i class="fa-solid fa-video text-emerald-400"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Industrial IP Surveillance Array</h3>
+                        <p class="text-xs font-sans text-slate-400 leading-relaxed">4K outdoor matrix featuring real-time stream aggregation.</p>
+                    </div>
+                    <div class="bg-slate-950 px-6 py-3 border-t border-slate-800/60 font-mono text-[11px] text-slate-500 flex justify-between items-center">
+                        <span>Live Verification:</span>
+                        <span class="text-emerald-400 font-bold">45 Cameras Active 24/7</span>
+                    </div>
+                </div>
+                <div class="project-card bg-slate-900 border border-slate-800 rounded-xl overflow-hidden flex flex-col justify-between" data-category="safety">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-[10px] font-mono bg-slate-800 border border-slate-700 px-2 py-0.5 rounded-sm uppercase tracking-wider text-slate-400">safety</span>
+                            <i class="fa-solid fa-fire text-orange-400"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">MSME Manufacturing Fire Grid</h3>
+                        <p class="text-xs font-sans text-slate-400 leading-relaxed">Addressable panels configured alongside flame safety metrics.</p>
+                    </div>
+                    <div class="bg-slate-950 px-6 py-3 border-t border-slate-800/60 font-mono text-[11px] text-slate-500 flex justify-between items-center">
+                        <span>Live Verification:</span>
+                        <span class="text-emerald-400 font-bold">0.4s Sensing Trigger Lag</span>
+                    </div>
+                </div>
+                <div class="project-card bg-slate-900 border border-slate-800 rounded-xl overflow-hidden flex flex-col justify-between" data-category="networking">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-[10px] font-mono bg-slate-800 border border-slate-700 px-2 py-0.5 rounded-sm uppercase tracking-wider text-slate-400">networking</span>
+                            <i class="fa-solid fa-layer-group text-indigo-400"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Commercial Server Infrastructure</h3>
+                        <p class="text-xs font-sans text-slate-400 leading-relaxed">Complete server cleanup, logical interface labeling, and rack tuning.</p>
+                    </div>
+                    <div class="bg-slate-950 px-6 py-3 border-t border-slate-800/60 font-mono text-[11px] text-slate-500 flex justify-between items-center">
+                        <span>Live Verification:</span>
+                        <span class="text-emerald-400 font-bold">Zero Loop Disruption Metrics</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="view-careers" class="tab-content max-w-2xl mx-auto space-y-10">
+            <div class="text-center">
+                <div class="text-purple-400 text-3xl mb-3"><i class="fa-solid fa-briefcase"></i></div>
+                <h2 class="text-2xl font-black text-white uppercase tracking-tight">Join Spandan Engineering Crew</h2>
+                <p class="text-xs font-sans text-slate-400 mt-2">
+                    Deploy your technical skill sets across mission-critical enterprise systems. Fill out the payload registration below.
+                </p>
+            </div>
+
+            <form action="https://formspree.io/f/YOUR_CAREER_FORM_ID" method="POST" enctype="multipart/form-data" class="bg-slate-900 border border-slate-800 p-6 sm:p-8 rounded-xl space-y-5 shadow-xl">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                    <div>
+                        <label class="block text-[10px] font-mono tracking-widest text-slate-400 uppercase mb-2">Candidate Full Name *</label>
+                        <input type="text" name="name" required class="w-full bg-slate-950 border border-slate-800 rounded-lg p-3 text-xs font-mono text-white focus:outline-hidden focus:border-purple-500 transition-colors" />
+                    </div>
+                    <div>
+                        <label class="block text-[10px] font-mono tracking-widest text-slate-400 uppercase mb-2">Contact Email *</label>
+                        <input type="email" name="email" required class="w-full bg-slate-950 border border-slate-800 rounded-lg p-3 text-xs font-mono text-white focus:outline-hidden focus:border-purple-500 transition-colors" />
+                    </div>
+                </div>
+                
+                <div>
+                    <label class="block text-[10px] font-mono tracking-widest text-slate-400 uppercase mb-2">Target Technical Role *</label>
+                    <select name="role" required class="w-full bg-slate-950 border border-slate-800 rounded-lg p-3 text-xs font-mono text-slate-400 focus:outline-hidden focus:border-purple-500 transition-colors">
+                        <option value="">Select Domain Assignment...</option>
+                        <option value="netops">Network DevOps / Field Engineer</option>
+                        <option value="safety">Fire Safety Commissioning Specialist</option>
+                        <option value="cctv">Surveillance & Storage Technician</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-[10px] font-mono tracking-widest text-slate-400 uppercase mb-2">Technical Core Competencies *</label>
+                    <textarea name="experience" rows="4" required class="w-full bg-slate-950 border border-slate-800 rounded-lg p-3 text-xs font-mono text-white focus:outline-hidden focus:border-purple-500 transition-colors" placeholder="Summarize certifications, routing loop diagnostics, or fire system alignments..."></textarea>
+                </div>
+
+                <div class="border border-dashed border-slate-800 bg-slate-950 rounded-xl p-6 text-center relative group hover:border-purple-500/40 transition-colors">
+                    <div class="text-slate-500 text-xl mb-2 group-hover:text-purple-400 transition-colors"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+                    <span class="block text-xs font-mono text-slate-400 font-bold mb-1">Select and Upload CV Document</span>
+                    <span class="block text-[10px] text-slate-500 font-sans">PDF format preferred (Max size 5MB)</span>
+                    <input type="file" name="resume" required class="absolute inset-0 opacity-0 cursor-pointer" />
+                </div>
+
+                <button type="submit" class="w-full bg-purple-600 hover:bg-purple-500 text-white font-mono font-bold text-xs uppercase tracking-widest p-4 rounded-lg flex items-center justify-center space-x-2 shadow-md transition-all">
+                    <i class="fa-solid fa-paper-plane text-xs mr-2"></i>
+                    <span>Submit Candidate Payload</span>
+                </button>
+            </form>
+        </div>
+
+        <div id="view-inquiry" class="tab-content space-y-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                
+                <div class="lg:col-span-4 space-y-6">
+                    <div class="bg-slate-900 border border-slate-800 p-6 rounded-xl">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <i class="fa-solid fa-circle-info text-amber-500"></i>
+                            <h3 class="font-mono text-xs font-bold uppercase tracking-wider text-white">Direct Desk Routing</h3>
+                        </div>
+                        <p class="text-xs text-slate-400 leading-relaxed font-sans mb-4">
+                            Route your architectural layout parameters directly to our configuration desk.
+                        </p>
+                        <span class="block font-mono text-xs text-amber-400 font-bold">spandanitperipherals@gmail.com</span>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-8 bg-slate-900 border border-slate-800 p-6 sm:p-8 rounded-xl shadow-2xl">
+                    <h3 class="font-mono text-sm font-bold uppercase tracking-wider text-white mb-6">Initialize New Project Architecture</h3>
+                    
+                    <form action="https://formspree.io/f/YOUR_INQUIRY_FORM_ID" method="POST" class="space-y-5">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                            <div>
+                                <label class="block text-[10px] font-mono tracking-widest text-slate-400 uppercase mb-2">Corporate Entity Name *</label>
+                                <input type="text" name="company" required class="w-full bg-slate-950 border border-slate-800 rounded-lg p-3 text-xs font-mono text-white focus:outline-hidden focus:border-amber-500 transition-colors" />
+                            </div>
+                            <div>
+                                <label class="block text-[10px] font-mono tracking-widest text-slate-400 uppercase mb-2">Operator Email *</label>
+                                <input type="email" name="email" required class="w-full bg-slate-950 border border-slate-800 rounded-lg p-3 text-xs font-mono text-white focus:outline-hidden focus:border-amber-500 transition-colors" />
+                            </div>
+                        </div>
+
+                        <div>
+                          <label class="block text-[10px] font-mono tracking-widest text-slate-400 uppercase mb-2">Primary Infrastructure Core Assignment *</label>
+                          <select name="infrastructure_target" required class="w-full bg-slate-950 border border-slate-800 rounded-lg p-3 text-xs font-mono text-slate-400 focus:outline-hidden focus:border-amber-500 transition-colors">
+                              <option value="">Select Domain Core...</option>
+                              <option value="networking">IT Networking Topologies</option>
+                              <option value="cctv">Perimeter CCTV Deployments</option>
+                              <option value="safety">Fire Detection & Regulations Control</option>
+                              <option value="manpower">Technical Manpower Integration</option>
+                          </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-[10px] font-mono tracking-widest text-slate-400 uppercase mb-2">Project Scope Specification Payload *</label>
+                            <textarea name="scope_details" rows="5" required class="w-full bg-slate-950 border border-slate-800 rounded-lg p-3 text-xs font-mono text-white focus:outline-hidden focus:border-amber-500 transition-colors" placeholder="Provide dimensions, switch port counts, or sensor density metrics..."></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-amber-500 hover:bg-amber-400 text-slate-950 font-mono font-bold text-xs uppercase tracking-widest p-4 rounded-lg flex items-center justify-center space-x-2 shadow-lg shadow-amber-500/10 transition-all">
+                            <i class="fa-solid fa-bolt mr-2"></i>
+                            <span>Transmit Inquiry Telemetry</span>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="border-t border-slate-800 bg-slate-950 py-6 text-center font-mono text-[10px] text-slate-500 tracking-wider">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-2">
+            <p>&copy; 2026 SPANDAN IT PERIPHERALS. SECURITY AND NETWORK TOPOLOGIES SYSTEM.</p>
+            <div class="flex space-x-4 text-slate-400">
+                <span>UDYAM-GJ-10-0069615</span>
+                <span>|</span>
+                <span>GSTIN: 24DPJPM5684FIZK</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function switchTab(tabId) {
+            // Hide all tab views
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => content.classList.remove('active'));
+            
+            // Show target view
+            document.getElementById('view-' + tabId).classList.add('active');
+            
+            // Reset navigation links styling matrix
+            const buttons = document.querySelectorAll('.nav-btn');
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-amber-500', 'text-slate-950', 'shadow-lg', 'shadow-amber-500/10');
+                btn.classList.add('text-slate-400', 'hover:text-white', 'hover:bg-slate-800');
+            });
+            
+            // Set targeted button active parameters
+            const targetBtn = document.getElementById('btn-' + tabId);
+            targetBtn.classList.remove('text-slate-400', 'hover:text-white', 'hover:bg-slate-800');
+            targetBtn.classList.add('bg-amber-500', 'text-slate-950', 'shadow-lg', 'shadow-amber-500/10');
+            
+            window.scrollTo(0,0);
+        }
+
+        function filterGallery(category) {
+            // Toggle active filter button indicators
+            const buttons = document.querySelectorAll('.filter-btn');
+            buttons.forEach(btn => {
+                if(btn.innerText.toLowerCase() === category) {
+                    btn.className = "filter-btn px-3 py-1.5 font-mono text-[10px] uppercase font-bold rounded-md tracking-wider bg-slate-800 text-white border border-slate-700";
+                } else {
+                    btn.className = "filter-btn px-3 py-1.5 font-mono text-[10px] uppercase font-bold rounded-md tracking-wider text-slate-400 hover:text-slate-200";
+                }
+            });
+
+            // Handle card layouts visibility filter properties
+            const cards = document.querySelectorAll('.project-card');
+            cards.forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
