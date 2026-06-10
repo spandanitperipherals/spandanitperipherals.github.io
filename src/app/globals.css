@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: #030712;
+    color: #f8fafc;
+  }
+}
+
+/* Custom glowing effect classes for the dark IoT look */
+.glow-blue {
+  box-shadow: 0 0 20px -3px rgba(59, 130, 246, 0.2);
+}
+.glow-amber {
+  box-shadow: 0 0 20px -3px rgba(245, 158, 11, 0.25);
+}
