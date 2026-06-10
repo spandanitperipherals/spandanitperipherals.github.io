@@ -228,7 +228,7 @@ export default function SpandanITPortal() {
 
             {/* FORMSPREE CAREER ROUTER */}
             <form 
-              action="https://formspree.io/f/YOUR_CAREER_FORM_ID" 
+              action="https://formspree.io/f/xzdqvwvw" 
               method="POST" 
               encType="multipart/form-data"
               className="bg-slate-900 border border-slate-800 p-6 sm:p-8 rounded-xl space-y-5 shadow-xl"
@@ -300,7 +300,7 @@ export default function SpandanITPortal() {
             <div className="lg:col-span-8 bg-slate-900 border border-slate-800 p-6 sm:p-8 rounded-xl shadow-2xl">
               <h3 className="font-mono text-sm font-bold uppercase tracking-wider text-white mb-6">Initialize New Project Architecture</h3>
               
-              <form action="https://formspree.io/f/YOUR_INQUIRY_FORM_ID" method="POST" className="space-y-5">
+              <form action="https://formspree.io/f/xzdqvwvw" method="POST" className="space-y-5">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div>
                     <label className="block text-[10px] font-mono tracking-widest text-slate-400 uppercase mb-2">Corporate Entity Name *</label>
