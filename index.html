@@ -202,10 +202,29 @@
                     <button onclick="filterGallery('networking')" class="filter-btn px-3 py-1.5 font-mono text-[10px] uppercase font-bold rounded-md tracking-wider text-slate-400 hover:text-slate-200">networking</button>
                     <button onclick="filterGallery('safety')" class="filter-btn px-3 py-1.5 font-mono text-[10px] uppercase font-bold rounded-md tracking-wider text-slate-400 hover:text-slate-200">safety</button>
                     <button onclick="filterGallery('cctv')" class="filter-btn px-3 py-1.5 font-mono text-[10px] uppercase font-bold rounded-md tracking-wider text-slate-400 hover:text-slate-200">cctv</button>
+                    <button onclick="filterGallery('application')" class="filter-btn px-3 py-1.5 font-mono text-[10px] uppercase font-bold rounded-md tracking-wider text-slate-400 hover:text-slate-200">application</button>
                 </div>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- NEW: Application Card with Actual Link -->
+                <div class="project-card bg-slate-900 border border-slate-800 rounded-xl overflow-hidden flex flex-col justify-between group hover:border-purple-500/30 transition-colors" data-category="application">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-[10px] font-mono bg-slate-800 border border-slate-700 px-2 py-0.5 rounded-sm uppercase tracking-wider text-slate-400">application</span>
+                            <i class="fa-solid fa-id-badge text-purple-400 group-hover:text-purple-300 transition-colors"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Navratri Gatepass Booking</h3>
+                        <p class="text-xs font-sans text-slate-400 leading-relaxed">Customizable gate pass badge renderer featuring photo cropping controls, SVG/PNG template uploads, and dynamic layout adjustments.</p>
+                    </div>
+                    <div class="bg-slate-950 px-6 py-3 border-t border-slate-800/60 font-mono text-[11px] text-slate-500 flex justify-between items-center">
+                        <span>Access Portal:</span>
+                        <a href="https://eventregistration.vercel.app" target="_blank" rel="noopener noreferrer" class="text-purple-400 hover:text-purple-300 font-bold flex items-center gap-1.5 transition-colors">
+                            Launch App <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
                 <div class="project-card bg-slate-900 border border-slate-800 rounded-xl overflow-hidden flex flex-col justify-between" data-category="networking">
                     <div class="p-6">
                         <div class="flex items-center justify-between mb-4">
